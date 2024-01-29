@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,
+        .box2,
+        .box3 {
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid blue;
+
+        }
+
+        .box1,
+        .box3 {
+            position: absolute;
+            background-color: lightgray;
+            top: 50px;
+            left: 100px;
+        }
+
+        .box3 {
+            z-index: 2;
+            background-color: lightcyan;
+        }
+
+        ul,
+        li {
+            display: inline;
+        }
+
+        li {
+            background-color: silver;
+            border: 2px double blue;
+            margin: 5px;
+        }
+
+        li:hover {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li id="li_box1"> box 1 </li>
+        <li id="li_box3"> box 3 </li>
+    </ul>
+    <div class="box1">
+        BOX1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eveniet ullam quos architecto
+        corrupti sint consequatur, voluptates facilis cum voluptatibus eum voluptatem dicta quibusdam rem. Officia
+        recusandae quidem fuga accusantium.
+    </div>
+    <div class="box2">
+        BOX 2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eveniet ullam quos architecto
+        corrupti sint consequatur, voluptates facilis cum voluptatibus eum voluptatem dicta quibusdam rem. Officia
+        recusandae quidem fuga accusantium.
+    </div>
+    <div class="box3">
+        BOX 3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eveniet ullam quos architecto
+        corrupti sint consequatur, voluptates facilis cum voluptatibus eum voluptatem dicta quibusdam rem. Officia
+        recusandae quidem fuga accusantium.
+    </div>
+    <div class="box2">
+        BOX 2 bis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eveniet ullam quos architecto
+        corrupti sint consequatur, voluptates facilis cum voluptatibus eum voluptatem dicta quibusdam rem. Officia
+        recusandae quidem fuga accusantium.
+    </div>
+    <script>
+        let box1 = document.querySelector('.box1');
+        let box3 = document.querySelector('.box3');
+        let li_box1 = document.querySelector('#li_box1');
+        let li_box3 = document.querySelector('#li_box3');
+
+        li_box1.addEventListener("mouseover", function (e) {
+            box1.style.zIndex = 5;
+            box3.style.zIndex = 0;
+        })
+
+        li_box3.addEventListener("mouseover", function (e) {
+            box3.style.zIndex = 5;
+            box1.style.zIndex = 0;
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+
+
+table {
+    border-radius: 10%;
+    background-color: rgb(180, 208, 213);
+}
+
+
+tr:hover { background-color: silver;}
+td:hover { background-color: grey;}
+
+table, thead, tr, th, body, td, tfoot {
+    padding: 20px;
+    margin: 15px;
+}
+
