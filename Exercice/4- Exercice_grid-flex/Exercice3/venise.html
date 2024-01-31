@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Venise</title>
+</head>
+
+<style>
+
+.venise {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "v1 v2 v3"
+    "v4 v4 v3"
+    "v5 v5 v5"
+    }
+
+
+.v1 {
+    grid-area: v1;
+    width: 320px;
+    height: 200px; 
+
+}
+
+.v2 {
+    grid-area: v2;
+    width: 320px;
+    height: 200px; 
+}
+
+.v3 {
+    grid-area: v3;
+    width: 320px;
+    height: 415px; 
+} 
+
+.v4 {
+    grid-area: v4;
+    width: 655px; 
+    height: 200px; 
+}
+
+.v5 {
+    grid-area: v5;
+    width: 990px;
+    height: 200px; 
+}
+
+
+
+.v1,
+.v2,
+.v3,
+.v4,
+.v5 {
+    border: solid black 5px;
+}
+
+</style>
+
+
+<body>
+    
+<div class="venise">
+<img class="v1" src="venise-1.jpg">
+<img class="v2 "src="venise-2.jpg">
+<img class="v3 "src="venise-3.jpg">
+<img class="v4" src="venise-4.jpg">
+<img class="v5" src="venise-5.jpg">
+
+
+</div>
+</body>
+</html>

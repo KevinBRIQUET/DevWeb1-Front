@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<canvas width="200px" height="200px"> <!-- Definir la zone-->
+
+
+
+</canvas>
+
+<script>
+
+var canvas = document.querySelector("canvas"); // selecteur CSS 
+let ctx = canvas.getContext("2d");             // Permet de dessiner
+ctx.fillStyle = "green";                       // propriété
+ctx.fillRect(10, 10, 100, 100);                 // Fonction associer a un objet (une méthode)
+ctx.fillStyle = "blue"; 
+ctx.fillRect(20, 10, 10, 75);
+ctx.fillStyle = "red"; 
+
+ctx.beginPath();
+ctx.moveTo(75, 50);
+ctx.lineTo(100, 75);
+ctx.lineTo(100, 75);
+ctx.fill();
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
