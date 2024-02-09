@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Première page */
+
+footer {
+    background-color: #292870;  
+}
+
+footer img {
+    margin: 25px 0px 25px 250px;
+}
+
+.premiere_page {
+    background-image: url(fond1.jpg); 
+    background-size: cover;
+    background-position: center; 
+}
+
+.logo2 {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    padding: 100px;
+}
+
+h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+
+}
+
+.freepik {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+
+
+
+.button {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    border: none;
+    border-radius: 20px; 
+    font-size: 50px; 
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .Download {
+    background-color: #6772E5; 
+    color: white;
+  }
+  
+  .Freetrial {
+    background-color: #D560A9; 
+    color: white;
+  }
+  
+
+  
+
+.mec1 {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Deuxieme Page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
